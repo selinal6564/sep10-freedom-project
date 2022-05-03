@@ -12,6 +12,8 @@
             
         </style>
         
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        
         <title>Title</title>
     </head>
     <body>
@@ -19,16 +21,16 @@
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Architecture</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    <a class="nav-link" href="#">Context</a>
-                    <a class="nav-link" href="#">Present</a>
-                    <a class="nav-link" href="#">Future</a>
+                    <a class="nav-link" href="#context">Context</a>
+                    <a class="nav-link" href="#present">Present</a>
+                    <a class="nav-link" href="#future">Future</a>
                   </div>
                 </div>
               </div>
@@ -58,74 +60,104 @@
             
             <div class="container-fluid" id="present1">
                 <div class="row">
-                    <div class="col-lg-6">
-                <h4>Software/Apps</h4>
-                Cedro
-                <ul>
-                    <li>Available on Web</li>
-                    <li>Users can create drawings and complete design proposals</li>
-                    <li>2D, 3D and photorealistic floor plans</li>
-                    <li>3D renderings to help visualize design ideas and to create photorealistic renderings (converting 3D models into images)</li>
-                </ul>
-                SketchUp
-                <ul>
-                    <li>Available on Desktop and Web</li>
-                    <li>Acts more like a pencil for sketching and designing</li>
-                    <li>Users can solve problems during the design process</li>
-                    <li>Users can draw 2D floor plans and more</li>
-                    <li>Users can give tours of 3D models using AR and VR presentation tools</li>
-                </ul>
-                Morpholio Trace Pro
-                <ul>
-                    <li>Available on iOS</li>
-                    <li>Allows users to draw on top of maps, photos, images, 3D models, background grids, etc</li>
-                    <li>Allows users to give virtual tours of their design</li>
-                    <li>Users can turn images to custom stencil templates</li>
-                </ul>
-                Room Scan Pro
-                <ul>
-                    <li>Available on iOS</li>
-                    <li>Users can generate a floor plan by scanning the space from a smartphone</li>
-                    <li>Users can also create floor plans by drawing by hand or tapping the smartphone against the wall</li>
-                    <li>Users can also scan outdoor areas</li>
-                </ul>
-                Construction Master Pro
-                <ul>
-                    <li>Available on iOS, Android, Windows</li>
-                    <li>Users can solve construction math problems</li>
-                    <li>Dimensional math and conversions</li>
-                </ul>
-                </div>
-                <div class="col-lg-6">
-                    <h4>Hardware/Gadgets</h4>
-                    Laser Tape Measure
-                    <ul>
-                        <li>An alternative to a traditional tape measure and makes measuring more convenient</li>
-                        <li>Can compute lengths, widths and heights</li>
-                    </ul>
-                    Graphic Tablet
-                    <ul>
-                        <li>Used to sketch and draw</li>
-                        <li>Portable device</li>
-                        <li>Can be connected to a PC or laptop</li>
-                    </ul>
-                    Stylus Pen
-                    <ul>
-                        <li>Compatible with devices such as iPad, tablets, phones</li>
-                        <li>Convenient for sketching</li>
-                    </ul>
-                    Camera Len Add-On
-                    <ul>
-                        <li>Can improve photography when capturing buildings and other objects</li>
-                        <li>Improve lighting</li>
-                        <li>Portable and easy to use</li>
-                    </ul>
-                    Portable Color Digitizer
-                    <ul>
-                        <li>Allows architects to capture a color from surfaces with a tap and later use it in drawings/designs</li>
-                        <li>Portable</li>
-                    </ul>
-                </div>
+                    <div class="col-lg-6" id="software">
+                        <h4>Software/Apps</h4>
+                        Cedro
+                        <ul>
+                            <li>Available on Web</li>
+                            <li>Users can create drawings and complete design proposals</li>
+                            <li>2D, 3D and photorealistic floor plans</li>
+                            <li>3D renderings to help visualize design ideas and to create photorealistic renderings (converting 3D models into images)</li>
+                        </ul>
+                        Sketchup
+                        <ul>
+                            <li>Available on Desktop and Web</li>
+                            <li>Acts more like a pencil for sketching and designing</li>
+                            <li>Users can solve problems during the design process</li>
+                            <li>Users can draw 2D floor plans and more</li>
+                            <li>Users can give tours of 3D models using AR and VR presentation tools</li>
+                        </ul>
+                        Morpholio Trace Pro
+                        <ul>
+                            <li>Available on iOS</li>
+                            <li>Allows users to draw on top of maps, photos, images, 3D models, background grids, etc</li>
+                            <li>Allows users to give virtual tours of their design</li>
+                            <li>Users can turn images to custom stencil templates</li>
+                        </ul>
+                        Room Scan Pro
+                        <ul>
+                            <li>Available on iOS</li>
+                            <li>Users can generate a floor plan by scanning the space from a smartphone</li>
+                            <li>Users can also create floor plans by drawing by hand or tapping the smartphone against the wall</li>
+                            <li>Users can also scan outdoor areas</li>
+                        </ul>
+                        Construction Master Pro
+                        <ul>
+                            <li>Available on iOS, Android, Windows</li>
+                            <li>Users can solve construction math problems</li>
+                            <li>Dimensional math and conversions</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6" id="hardware">
+                        <h4>Hardware/Gadgets</h4>
+                        Laser Tape Measure
+                        <ul>
+                            <li>An alternative to a traditional tape measure and makes measuring more convenient</li>
+                            <li>Can compute lengths, widths and heights</li>
+                        </ul>
+                        Graphic Tablet
+                        <ul>
+                            <li>Used to sketch and draw</li>
+                            <li>Portable device</li>
+                            <li>Can be connected to a PC or laptop</li>
+                        </ul>
+                        Stylus Pen
+                        <ul>
+                            <li>Compatible with devices such as iPad, tablets, phones</li>
+                            <li>Convenient for sketching</li>
+                        </ul>
+                        Add-On Camera Lens
+                        <ul>
+                            <li>Can improve photography when capturing buildings and other objects</li>
+                            <li>Improve lighting</li>
+                            <li>Portable and easy to use</li>
+                        </ul>
+                        VR Goggles/Headset
+                        <ul>
+                            <li>Able to experience virtual 3D experiences and animations in real-time</li>
+                            <li>Allows architects/designers to convert their 3D models in VR experiences</li>
+                        </ul>
+                        
+                        <!-- Carousel -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="img/laser-tape-measure.jpg" width="100" height="400" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/graphic-tablet.jpg" width="100" height="400" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/stylus-pen.jpg" width="100" height="400" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/camera-len.png" width="100" height="400" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="img/vr-headset.jpg" width="100" height="400" class="d-block w-100" alt="...">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    
+                    </div>
                 </div>
             </div>
             
@@ -144,6 +176,13 @@
                     <li>This can help architects visualize their plans better and make any changes that they need to make. Architects can make changes quickly on the app and visualize them.</li>
                 </ul>
             </div>
+            
+            <!-- A-frame -->
+              <div id="aframe">
+                <a-scene embedded>
+                  <a-cylinder color="blue" position="1 0.5 -7" height="4" radius="1"></a-cylinder>
+                </a-scene>
+              </div>
             
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>
