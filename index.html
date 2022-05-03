@@ -19,7 +19,7 @@
     <body>
         <!-- HTML -->
             <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #F9EFEA;">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#">Architecture</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -175,14 +175,16 @@
                     <li>It can also give any additional recommendations on how it can fit in better with its surroundings</li>
                     <li>This can help architects visualize their plans better and make any changes that they need to make. Architects can make changes quickly on the app and visualize them.</li>
                 </ul>
+                
+                <!-- A-frame -->
+                <div id="aframe">
+                    <a-scene embedded>
+                      <a-cylinder color="blue" position="1 0.5 -7" height="4" radius="1"></a-cylinder>
+                    </a-scene>
+                  </div>
+            
             </div>
             
-            <!-- A-frame -->
-              <div id="aframe">
-                <a-scene embedded>
-                  <a-cylinder color="blue" position="1 0.5 -7" height="4" radius="1"></a-cylinder>
-                </a-scene>
-              </div>
             
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="script.js"></script>

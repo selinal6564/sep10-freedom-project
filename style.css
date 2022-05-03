@@ -1,18 +1,50 @@
 #title {
     text-align: center;
-    padding: 100px;
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background-image: url('img/architecture2.jpg');
+    background-size: cover;
 }
 
 #context {
     text-align: center;
+    background-color: #F9EFEA;
+    padding: 20px;
+}
+
+#context1 {
+    background-color: #F4F5F4;
+    padding: 30px;
 }
 
 #present {
     text-align: center;
+    background-color: #F9EFEA;
+    padding: 20px;
+}
+
+#software {
+    background-color: #F4F5F4;
+    padding: 30px;
+}
+
+#hardware {
+    background-color: #F4F5F4;
+    padding: 30px;
 }
 
 #future {
     text-align: center;
+    background-color: #F9EFEA;
+    padding: 20px;
 }
 
+#future1 {
+    background-color: #F4F5F4;
+    padding: 30px;
+}
 
+#aframe {
+    height: 300px;
+    width: 600px;
+}
