@@ -6,6 +6,13 @@
     background-size: cover;
 }
 
+h1 {
+    background-color: #E3D6CA;
+    margin: 20px 100px;
+    padding: 10px;
+    border-style: solid;
+}
+
 #context {
     text-align: center;
     background-color: #E3D6CA;
