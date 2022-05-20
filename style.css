@@ -2,7 +2,7 @@
     text-align: center;
     padding-top: 400px;
     padding-bottom: 400px;
-    background-image: url('img/architecture2.jpg');
+    background-image: url('img/architecture.jpg');
     background-size: cover;
 }
 
@@ -26,11 +26,15 @@
 #software {
     padding: 30px;
     background-color: #F9EFEA;
+    border-style: solid;
+    border-width: 0.5px;
 }
 
 #hardware {
     padding: 30px;
     background-color: #F9EFEA;
+    border-style: solid;
+    border-width: 0.5px;
 }
 
 #future {
@@ -46,5 +50,5 @@
 
 #aframe {
     height: 300px;
-    width: 600px;
+    width: 500px;
 }
